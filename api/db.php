@@ -34,7 +34,7 @@ class DB
     }
     private function math($math, $col, $array = '', $other = '')
     {
-        $sql = "select sum(`$col`) from `$this->table` ";
+        $sql = "select $math(`$col`) from `$this->table` ";
         $sql = $this->sql_all($sql, $array, $other);
         return $this->pdo->query($sql)->fetchColumn();
     }
@@ -68,6 +68,7 @@ class DB
         }
         $row = $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
         return $row;
+
     }
 
 
