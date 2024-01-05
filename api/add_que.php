@@ -5,8 +5,6 @@ if(isset($_POST['subject'])){
     $subject_id=$Que->find(['text'=>$_POST['subject']])['id'];
     $subject_id2=$Que->max('id');
 }
-echo $subject_id;
-echo $subject_id2;
 
 if(isset($_POST['option'])){
     foreach($_POST['option'] as $option){
