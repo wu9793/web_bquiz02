@@ -1,4 +1,4 @@
-<form action="../api/edit_user.php">
+<form action="./api/edit_news.php">
     <table style="width:75%;text-align:center">
         <tr>
             <td>編號</td>
