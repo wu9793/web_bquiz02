@@ -45,7 +45,8 @@
             type
         }, (list) => {
             $(".list-items").html(list)
-            $(".article,.list-items").toggle();
+            $(".article").hide();
+            $(".list-items").show();
         })
     }
 
@@ -54,7 +55,8 @@
             id
         }, (news) => {
             $(".article").html(news)
-            $(".article,.list-items").toggle();
+            $(".article").show();
+            $(".list-items").hide();
         })
     }
 </script>
